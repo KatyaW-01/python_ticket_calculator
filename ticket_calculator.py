@@ -11,3 +11,11 @@ def movie_cost(age,movie):
     return 10
   elif age >= 60 and movie == "premium":
     return 12
+  
+
+customer_age = int(input("What is your age? "))
+movie_type = input("What movie will you be seeing? Please enter regular or premium. ")
+
+cost = movie_cost(customer_age,movie_type)
+
+print(f"Your ticket will be ${cost}")
